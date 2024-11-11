@@ -1,0 +1,6 @@
+<h1>Result</h1>
+<p><%= @answer %></p>
+<% if !session[:score].nil? %>
+  <p>Your score is <strong><%= session[:score] %></strong> points.</p>
+<% end %>
+<%= link_to "Play again", new_path, class: ["btn", "btn-primary"]%>
